@@ -1,7 +1,7 @@
 # FARS: Package for reading FARS data.
 
 
-This is `R` package was created as part of an assignement for the Coursera course [Building R Packages](https://www.coursera.org/learn/r-packages/home/welcome).
+This is `R` package was created as part of an assignment for the Coursera course [Building R Packages](https://www.coursera.org/learn/r-packages/home/welcome).
 
 The farsr library contains functions for the reading and displaying of FARS data.
 
