@@ -63,10 +63,5 @@ setwd(system.file("extdata", package = "farsr"))
 fars_summarize_years(2013:2015)
 ```
 
-## fars_map_state()
-```{r example5, fig.show='hold' }
-setwd(system.file("extdata", package = "farsr"))
-fars_map_state(1, 2013)
-```
 
 
