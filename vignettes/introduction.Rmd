@@ -1,0 +1,71 @@
+---
+title: "Introduction to FASR data"
+author: "John Adams"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{FARS package Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+```{r, echo = FALSE, include = FALSE}
+library(dplyr)
+library(maps)
+```
+
+The farsr library contains functions for the reading and displaying of FARS data.
+
+A FARS data file contains data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System, which is a nationwide census providing the American public yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+The library requires dplyr, tidyr, readr, maps, and graphics.
+
+
+## Functions
+
+`fars_map_state`          Plots location of accidents on a map.
+
+`fars_read`               Read FARS file
+
+`fars_read_years`         Reads months and years from multiple FARS files (for multiple years)
+
+`fars_summarize_years`    Reads months and years from FARS files and summarizes how many accidents occurred per month/year
+
+`make_filename`           Create a FARS filename for a particular year
+
+
+## Examples
+
+### fars_read()
+```{r eval=FALSE}
+fars_read("accident_2015.csv.bz2")
+```
+```{r example1, results = "asis", echo=FALSE}
+setwd(system.file("extdata", package = "farsr"))
+knitr::kable(head(fars_read("accident_2015.csv.bz2")))
+```
+
+### make_filename()
+```{r example2}
+setwd(system.file("extdata", package = "farsr"))
+make_filename(2015)
+```
+
+### fars_read_years()
+```{r example3}
+setwd(system.file("extdata", package = "farsr"))
+fars_read_years(2013:2015)
+fars_read_years(list(2013, 2015))
+```
+### fars_summarize_years()
+```{r example4}
+setwd(system.file("extdata", package = "farsr"))
+fars_summarize_years(2013:2015)
+```
+
+## fars_map_state()
+```{r example5, fig.show='hold' }
+setwd(system.file("extdata", package = "farsr"))
+fars_map_state(1, 2013)
+```
+
+

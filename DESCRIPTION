@@ -1,0 +1,25 @@
+Package: farsr
+Title: Process NHTSA FARS data
+Version: 0.0.0.9000
+Authors@R: person("John", "Adams", email = "jadams@hyut.com", role = c("aut", "cre"))
+Description: Processes FARS data. A FARS file contains data from the US National
+    Highway Traffic Safety Administration's Fatality Analysis Reporting System,
+    which is a nationwide census providing the American public yearly data regarding
+    fatal injuries suffered in motor vehicle traffic crashes.
+Depends:
+    R (>= 3.3.2)
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    tidyr,
+    readr,
+    maps,
+    graphics
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
