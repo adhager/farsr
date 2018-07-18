@@ -21,3 +21,5 @@ The library requires dplyr, tidyr, readr, maps, and graphics.
 `fars_summarize_years`    Reads months and years from FARS files and summarizes how many accidents occurred per month/year
 
 `make_filename`           Create a FARS filename for a particular year
+
+[![Travis-CI Build Status](https://travis-ci.org/adhager/farsr.svg?branch=master)](https://travis-ci.org/adhager/farsr)
