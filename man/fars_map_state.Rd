@@ -18,7 +18,9 @@ NULL. Draws a plot. On error (invalid state, no accidents), displays a message.
 Plots location of accidents on a map.
 }
 \examples{
-fars_map_state(1, 2013)
+\dontrun{
+fars_map_state(9, 2013)
+}
 
 }
 

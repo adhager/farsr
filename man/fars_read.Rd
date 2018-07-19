@@ -24,7 +24,9 @@ suffered in motor vehicle traffic crashes.
 Requires dpyr, tidyr, readr, maps, graphics
 }
 \examples{
+\dontrun{
 fars_read("data/accident_2015.csv.bz2")
+}
 
 }
 

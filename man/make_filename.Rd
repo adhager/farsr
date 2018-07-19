@@ -17,7 +17,9 @@ If year is not numeric, a warning is generated: "NAs introduced by coercion"
 Create a FARS filename for a particular year
 }
 \examples{
+\dontrun{
 make_filename("2015")
+}
 
 }
 

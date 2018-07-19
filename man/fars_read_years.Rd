@@ -18,7 +18,10 @@ Notes:
 The FARS file(s) must be located in the current working directory.
 }
 \examples{
+\dontrun{
 fars_read_years(2013:2015)
 fars_read_years(list(2013, 2015))
+}
+
 }
 

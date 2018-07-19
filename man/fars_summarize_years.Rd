@@ -17,7 +17,9 @@ Notes:
 The FARS file(s) must be located in the current working directory.
 }
 \examples{
+\dontrun{
 fars_summarize_years(2013:2015)
+}
 
 }
 
