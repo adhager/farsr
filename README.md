@@ -22,4 +22,6 @@ The library requires dplyr, tidyr, readr, maps, and graphics.
 
 `make_filename`           Create a FARS filename for a particular year
 
+Travis CI Status Badge:
+
 [![Travis-CI Build Status](https://travis-ci.org/adhager/farsr.svg?branch=master)](https://travis-ci.org/adhager/farsr)
