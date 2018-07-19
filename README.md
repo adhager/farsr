@@ -1,4 +1,4 @@
-# FARS: Package for reading FARS data.
+# FARSr: Package for reading FARS data.
 
 
 This is `R` package was created as part of an assignment for the Coursera course [Building R Packages](https://www.coursera.org/learn/r-packages/home/welcome).
