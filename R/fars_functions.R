@@ -14,7 +14,9 @@
 #' will stop
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("data/accident_2015.csv.bz2")
+#' }
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
@@ -37,7 +39,9 @@ fars_read <- function(filename) {
 #' If year is not numeric, a warning is generated: "NAs introduced by coercion"
 #'
 #' @examples
+#' \dontrun{
 #' make_filename("2015")
+#' }
 #'
 #' @export
 make_filename <- function(year) {
@@ -56,8 +60,11 @@ make_filename <- function(year) {
 #' If any error occurs, a warning is generated: "invalid year: XXXX"
 #'
 #' @examples
+#' \dontrun{
 #' fars_read_years(2013:2015)
 #' fars_read_years(list(2013, 2015))
+#' }
+#'
 #' @importFrom dplyr mutate
 #' @importFrom dplyr select
 #'
@@ -86,7 +93,9 @@ fars_read_years <- function(years) {
 #' @return This function returns a tibble containing the number of accidents per month. Each column represents a year and each row a month.
 #'
 #' @examples
+#' \dontrun{
 #' fars_summarize_years(2013:2015)
+#' }
 #'
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr group_by
@@ -110,7 +119,9 @@ fars_summarize_years <- function(years) {
 #' @return NULL. Draws a plot. On error (invalid state, no accidents), displays a message.
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(1, 2013)
+#' }
 #'
 #' @importFrom dplyr filter
 #' @importFrom maps map
