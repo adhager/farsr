@@ -6,8 +6,6 @@ Description: Processes FARS data. A FARS file contains data from the US National
     Highway Traffic Safety Administration's Fatality Analysis Reporting System,
     which is a nationwide census providing the American public yearly data regarding
     fatal injuries suffered in motor vehicle traffic crashes.
-Depends:
-    R (>= 3.3.2)
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
